@@ -24,7 +24,7 @@ Now what the hell is going on here...time to do some Python analysis again!!!!!!
   - Runs `j()` on the two characters, which uses their ASCII values and returns an integer
   - Subtracts 10 from this value, and then runs `a()` to calculate how many steps it takes to reach 1 according to the [Collatz Conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
   - Passes this value into `d()` alongside the index, which returns another value thats tripled and compared to `l[i]`
-- Once this is all done and no falsities are found, it checks if `k(x.encode()).hexdigest()` ends in `b4f9d505`, and if true the method `t()` returns True (the input `x` is the flag!)
+- Once this is all done and no falsities are found, it checks if `k(x.encode()).hexdigest()` starts with `b4f9d505`, and if true the method `t()` returns True (the input `x` is the flag!)
 
 ### Reversing the `.pyc` code
 
