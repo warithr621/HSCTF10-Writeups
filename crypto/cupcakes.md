@@ -10,19 +10,19 @@ You have to make 100 cupcakes for your upcoming end of year party and you only h
 
 Since the message is a bunch of random characters, we hope this is just a simple cipher. Let's use [Boxentriq's Cipher Identifier](https://www.boxentriq.com/code-breaking/cipher-identifier) to get some insight.
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/1b392654-9b10-4ab6-b59b-bb6df8692170)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/6e14a965-7329-44b4-baa1-8298646a78e0)
 
 Let's see if the Bifid Cipher is any help to us.
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/d624a2b5-09ff-49e7-84cc-61496c2e103c)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/cafd9738-ce97-4c25-8bdc-b28d5071da15)
 
 Darn, still a bunch of random letters. Next, the Beaufort Cipher.
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/28489717-6bbf-49cf-91e7-df08f7d67eb2)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/2ec2c0d0-3836-4908-a0b7-46e744c2a920)
 
 At this point I'm just thinking this is probably not the right approach. Let's see if we can get anything out of the Vigenere Cipher, else we might be out of luck.
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/2f28ccdf-2721-45e4-b491-ee9c821946ae)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/9758f3d5-1a14-4297-b615-0bfa07d606eb)
 
 Huh, those actually look like real words, and they relate to cupcakes. Testing this, we find this is our flag!
 

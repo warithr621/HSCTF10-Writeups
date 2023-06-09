@@ -10,11 +10,11 @@ The pros solve it by hand.
 
 Since we're given a definition for some kind of salad, let's search it up and figure out what salad we're working with.
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/899b8d8b-5c39-4db4-a4b8-e347720cc99e)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/d9850a93-e629-4bff-995b-735ce8ab92e5)
 
 Caesar cipher it is! Let's chuck the gibberish below the definition for [DCode](https://www.dcode.fr/caesar-cipher) to decrypt (or recognize `tzou{}` -> `flag{}` and find the shift manually).
 
-![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/6206dc76-f265-4ef8-be66-10ca29b152aa)
+![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/6abb12cc-6ebe-4499-b048-519132822559)
 
 ```
 The flag is the following: AycqypAgnfcpqYpcAmmj
