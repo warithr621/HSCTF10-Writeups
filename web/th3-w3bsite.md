@@ -8,7 +8,7 @@ Link: [https://th3-w3bsite.hsctf.com/](https://th3-w3bsite.hsctf.com/)
 
 ## Solution: 
 
-When we open the website, we see a picture of a pretty nice cat. Let's look around the site to see what we can find on it through Inspect Tools.
+When we open the website, we see a picture of a pretty nice cat. Let's look around the site to see what we can find on it through Chrome Devtools.
 
 ![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/f2711d40-6dc1-48f2-8842-d7a9434de265)
 

@@ -16,7 +16,7 @@ Darn, time to stop the Joker!! We're given some login info, so let's just put th
 
 ![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/56e5ae58-4a87-4acd-ba11-7c3a24b3eda4)
 
-?????? Well that's weird. Let's open up the Inspect Tool and see if we can find anything. After browsing through, we find source code for `login.js` that most likely controls the login verification.
+?????? Well that's weird. Let's open up Chrome Devtools and see if we can find anything. After browsing through, we find source code for `login.js` that most likely controls the login verification.
 
 ```JavaScript
         var username = document.getElementById("username").value;
@@ -123,7 +123,7 @@ print(pwd)
 Introduce A Little Anarchy, Upset The Established Order, And Everything Becomes Chaos!!
 ```
 
-Plugging this password (a quote from the Joker himself) in with the right password, we get to `admin_panel.html` and get our flag.
+Plugging this password (a quote from the Joker himself) in with the right username (`Admin`), we get to `admin_panel.html` and get our flag.
 
 ![image](https://github.com/warithr621/HSCTF10-Writeups/assets/64328893/c1de3f14-b5b7-438d-a9df-4dbce6101782)
 

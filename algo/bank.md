@@ -10,7 +10,7 @@
 
 LETS GO I LOVE ROBBING BANKS!!!!!!!
 
-Anywho, let's figure out how we should approach this. We're told each account will only be open for at most 20 minutes, but we only need 10 minutes to hack an account. To effectively do this and avoid any edge cases, let's sort the windows based on how early they *end* rather than begin, and loop through greedily (this idea is actually outlined in [USACO Guide](https://usaco.guide/silver/greedy-sorting?lang=cpp)).
+Anywho, let's figure out how we should approach this. We're told each account will only be open for at most 20 minutes, but we only need 10 minutes to hack an account. To effectively do this and avoid any edge cases, let's sort the windows based on how early they *end* rather than begin, and loop through greedily (this idea is actually outlined in [The USACO Guide](https://usaco.guide/silver/greedy-sorting?lang=cpp)).
 
 ```Python
 from pwn import *

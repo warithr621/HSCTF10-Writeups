@@ -10,7 +10,7 @@ Clarification: the flagpole must be the full component, not just a subset of the
 
 ## Solution: 
 
-As a warning, this is probably the most convoluted code I've ever written (and most likely unnecessary), there's definitely several things I could've cut out from my solution since they were taken care of later).
+As a warning, this is probably the most convoluted code I've ever written (and most likely unnecessary since there's definitely several things I could've cut out from my solution since they were taken care of later), but oh well!!
 
 ### Analyzing the problem and finding a solution
 
