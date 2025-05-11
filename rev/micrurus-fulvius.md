@@ -28,7 +28,7 @@ Now what the hell is going on here...time to do some Python analysis again!!!!!!
 
 ### Reversing the `.pyc` code
 
-Now that we know what everything does, let's reverse this code! My program for this is [here](https://github.com/warithr621/Comp-Programming/blob/main/Other_Contests/HSCTF/HSCTF10/MicrurusFulviusSolnPartOne.py), but I'll walk through all my steps below:
+Now that we know what everything does, let's reverse this code! My program for this is [here](https://ideone.com/HekfDb), but I'll walk through all my steps below:
 - We start with trying to make `d( a( j(*c) - 10 ), i ) * 3 == l[i]` a true statement
 - If we divide each side by 3 and reverse the method `d()`, we can get a value equivalent to `a(j(*c)-10)`
   - Set `cur = l[i] // 3` as in line 36 of my program
@@ -51,8 +51,8 @@ Yeah, this might be a problem... how in the world are we gonna figure out what s
 
 To fix this slight problem, we're gonna do this in the most competitive-programming way possible (at least to my very limited extent): BFS.
 
-BFS stands for Breadth-First Search, which starts at the root of a node and searches each level one at a time. The key that makes this (or DFS) feasible is that if the program is built on consecutive characters, they must be linked. For instance we know that we're trying to find the flag that starts with `flag{`, so the first pair must be `'fl'`, then `'la'`, then `'ag'`, then `'g{'`, and so on. By searching our lists like this, we can find out exactly what our flag is. Now, it's time to walk through my code [here](https://github.com/warithr621/Comp-Programming/blob/main/Other_Contests/HSCTF/HSCTF10/MicrurusFulviusSolnPartTwo.java).
-- Lines 7-18 parse all of the input printed by the Python program I wrote earlier, storing each list of possible charactrs under a different "level" (ideally based on the index `i` from the `.pyc` file)
+BFS stands for Breadth-First Search, which starts at the root of a node and searches each level one at a time. The key that makes this (or DFS) feasible is that if the program is built on consecutive characters, they must be linked. For instance we know that we're trying to find the flag that starts with `flag{`, so the first pair must be `'fl'`, then `'la'`, then `'ag'`, then `'g{'`, and so on. By searching our lists like this, we can find out exactly what our flag is. Now, it's time to walk through my code [here](https://ideone.com/N7E735).
+- Lines 7-18 parse all of the input printed by the Python program I wrote earlier, storing each list of possible characters under a different "level" (ideally based on the index `i` from the `.pyc` file)
 - Lines 19-25 builds a `Queue` that starts keeping track of our input, which looks for all the pairs in index 4 that start with `{` (since `i=0 -> 'fl'`, `i=1 -> 'la'`, `i=2 -> 'ag'`, `i=3 -> 'g{'`, `i=4 -> '{?'`)
 - Line 27 begins the BFS, which works as so:
   - First, we pop an element from the `Queue` which stores the current character-pair and the next index we should be looking at

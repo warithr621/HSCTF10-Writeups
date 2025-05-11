@@ -62,7 +62,7 @@ Ideally what this code does is gather the input based on how it's formatted (eac
 
 ### Solving the actual problem in Java
 
-For reference my program is 200+ lines (oops), so you can view the code [here](https://github.com/warithr621/Comp-Programming/blob/main/Other_Contests/HSCTF/HSCTF10/LargestFlagpoleSolver.java). Here's the idea behind it...
+For reference my program is 200+ lines (oops), so you can view the code [here](https://ideone.com/w3gf0P). Here's the idea behind it...
 - For each test case, reset all the old variables before running the `solve()` method
 - First, set up the graph by using `parseInput()` to collect all the input
 - Next, we use `findComponents()`, which uses Java's `Queue` interface in a BFS-style approach in searching the graph. All the nodes are separated into components in the array `comps`, and the array `cnum` matches each node with what component it belongs to (this way, you can find all the nodes in Component 1, but also what component Node 1 is in)
